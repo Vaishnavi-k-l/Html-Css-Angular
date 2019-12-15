@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+
+<body>
+    <header>
+        <img src="images/ibmlogo.png" alt="IBM Logo">
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Contact us - fill in the form below</h1>
+        <form action="formsubmission.php" method="POST" autocomplete="off">
+            <div class="formStyling">
+                <label for="fullname">Enter your full name <sup>*</sup>:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required autofocus><br>
+            </div>
+
+            <div  class="formStyling">
+                <label for="email">Enter your E-mail <sup>*</sup>:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            </div>
+
+            <div  class="formStyling">
+                <label for="telephone">Enter your telephone <sup>*</sup> :</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Max 10 digits" minlength="8"
+                    maxlength="10" required><br>
+            </div>
+
+            <div  class="formStyling">
+                <label for="age">Enter your age <sup>*</sup> :</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" step="1"  min="18" max="100" required><br>
+            </div>
+
+
+            <div  class="formStyling">
+                <label for="typeofquery">Select your query :</label>
+                <select id="typeofquery" name="typeofquery">
+                    <option>----Select one-----</option>
+                    <option value="1">Business consulting</option>
+                    <option value="2">software support</option>
+                    <option value="3">Reporting issues in software</option>
+                    <option value="4">Investor related</option>
+                    <option value="5">Media Relations</option>
+                </select>
+            </div>
+
+            <div  class="formStyling">
+                <label for="querydesc">Enter the query: </label>
+                <textarea id="querydesc" style="vertical-align: top"></textarea>
+            </div>
+
+            <div class="formStyling">
+                <button type="reset" class="resetButton" >Reset</button>
+                <input type="submit" value="Submit this form" class="resetButton" >
+            </div>
+        </form>
+
+        <p>We are here</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7933401863347!2d77.61928146439267!3d13.048822516710757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176523471199%3A0x33117b18a422a98b!2sInternational%20Business%20Machines%20Corporation!5e0!3m2!1sen!2sin!4v1567596787429!5m2!1sen!2sin"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        <p>A video</p>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/cTmm-DEs0ko" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+
+
+</body>
+
+</html>

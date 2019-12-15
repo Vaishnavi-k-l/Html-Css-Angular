@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <script src="jquery-3.4.1.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("#para").hide();
+                $(".h1class").css("color","blue");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>This will disappear</p>
+    <p id="para">Disappear</p>
+    <!-- <p id="para">Disappear paar2</p> You cannot have 2 elements with the same ID. It wont work -->
+    <h1 class="h1class">Header color</h1>
+    <button>Click me</button>
+</body>
+</html>

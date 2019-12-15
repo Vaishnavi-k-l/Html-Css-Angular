@@ -1,0 +1,139 @@
+body
+{
+    text-align: center;
+}
+
+.mainContent
+{
+    margin-top: 8%;
+}
+
+/*-----------Style for the LinkedIn logo---------------*/
+.logoStyle
+{
+    width: 20px;
+    /* background-color: #6e6ed2;
+    color: white;
+    height: auto;
+    font-weight: normal; */
+    vertical-align: unset;
+}
+
+
+
+.headerLogo
+{
+    margin-bottom: 40px;
+}
+
+/*-----------Style for the 1 line description about LinedIn---------------*/
+.description
+{
+    color: #979797;
+}
+
+/*-----------Style for the form---------------*/
+.form
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-----------Style for the input field of the form---------------*/
+.form input
+{
+ width : 400px;
+ margin: 0 auto;
+ border: solid 1px black;
+ height: 50px;
+ border-radius: 0;
+}
+
+
+/*-----------Style for the submit button---------------*/
+.buttonStyling
+{
+    width : 400px;
+    height: 50px;
+    margin-top: 3%;
+    border-radius: 0;
+}
+
+
+/*-------------Style for the Forgot passowrd link-----------*/
+.forgotPassowrd
+{
+    font-weight: 700;
+    color: 28c3d4;
+    margin-top: 10px;
+}
+
+a, a:hover, a:active, a:visited, a:focus
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    background-color: #d9eeec;
+}
+
+/*-------------Link to registration page---------------*/
+.RegisterPara
+{
+    margin-top: 4%;
+}
+
+
+/*-------------Show passowrd part---------------*/
+.pass_show
+{
+    position: relative;
+} 
+
+.pass_show .ptxt
+{ 
+    position: absolute; 
+    top: 50%;   
+    right: 10px; 
+    z-index: 1; 
+    color: #f36c01; 
+    margin-top: -10px;  
+    cursor: pointer; 
+    transition: .3s ease all; 
+} 
+
+.pass_show .ptxt:hover
+{  
+     color: #333333;
+} 
+
+/*------------Footer styling-------------*/
+.footerStyle
+{
+    margin: 100px auto 50px;;
+    padding-top: 30px;
+    border-top:solid 1px #e5e5e5;
+}
+
+.footerImage
+{
+    vertical-align: text-bottom;
+    width: 20px;
+}
+
+.footerStyle p
+{
+    display: inline;
+    /* padding: 10px; */
+}
+
+.footerStyle a
+{
+    padding: 15px;
+}
+
+.footerStyle a{
+    color: black;
+
+}

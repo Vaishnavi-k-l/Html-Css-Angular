@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/ibmlogo.png" alt="IBM Logo">
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <nav id="sidebarNav">
+            <ul>
+                <li><a href="#history">History of IBM</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#investors">Investors</a></li>
+                <li><a href="#recruitments">Recruitments</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!--main content rhs-->
+    <main class="mainContent">
+        <h1>About IBM</h1>
+        <div id="history">
+            <h3>History</h3>
+            <p>IBM originated from the bringing together of several companies that worked to automate routine business
+                transactions, including the first companies to build punch card based data tabulating machines and to
+                build time clocks. ... In 1924 the company changed its name to "International Business Machines.
+                IBM originated from the bringing together of several companies that worked to automate routine business
+                transactions, including the first companies to build punch card based data tabulating machines and to
+                build time clocks. ... In 1924 the company changed its name to "International Business Machines."</p>
+        </div>
+
+        <div id="leadership">
+            <h3>Leadership</h3>
+            <p>IBM originated from the bringing together of several companies that worked to automate routine business
+                transactions, including the first companies to build punch card based data tabulating machines and to
+                build time clocks. ... In 1924 the company changed its name to "International Business Machines.
+                IBM originated from the bringing together of several companies that worked to automate routine business
+                transactions, including the first companies to build punch card based data tabulating machines and to
+                build time clocks. ... In 1924 the company changed its name to "International Business Machines."</p>
+        </div>
+
+        <div id="investors">
+            <h3>Investors</h3>
+            <p>IBM originated from the bringing together of several companies that worked to automate routine business
+                transactions, including the first companies to build punch card based data tabulating machines and to
+                build time clocks. ... In 1924 the company changed its name to "International Business Machines.
+                IBM originated from the bringing together of several companies that worked to automate routine business
+                transactions, including the first companies to build punch card based data tabulating machines and to
+                build time clocks. ... In 1924 the company changed its name to "International Business Machines."</p>
+        </div>
+
+        <div id="recruitments">
+            <h3>Recruitments</h3>
+            <section id="profileUpload">
+                <h3>Submit your profile here</h3>
+
+                <form action="uploadingProfile.php" method="GET">
+                    <div>
+                        <label for="fullname">Enter your full name <sup>*</sup>:</label>
+                        <input type="text" id="fullname" name="name" placeholder="Enter your name" required
+                            autofocus><br>
+                    </div>
+
+                    <div>
+                        <label for="profile">Upload your profile here <sup>*</sup>:</label>
+                        <input type="file" id="profile" name="profile" required><br>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Submit profile">
+                    </div>
+                </form>
+            </section>
+
+
+
+            <!--iframe is an inline element-->
+            <p>Learn more about IBM employess</p>
+            <iframe src="https://www.wikipedia.org/" width="1000" height="600"></iframe>
+        </div>
+
+    </main>
+
+   
+
+</body>
+
+</html>

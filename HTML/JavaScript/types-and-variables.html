@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Types and Variables</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var eid=101;
+        var name = "Vaishnavi";
+        var salary = '12lpa';
+        console.log(typeof eid);
+        console.log(typeof name);
+        console.log(typeof salary);
+        console.log();
+
+        var strQuantity = "10";
+        var strDiscount = "10.25";
+        console.log("String: " + strQuantity);
+        console.log("String: " + strDiscount);
+        console.log(typeof strQuantity);
+        console.log(typeof strDiscount);
+        var quantity = parseInt(strQuantity);
+        var discount = parseInt(strDiscount);
+        console.log("After Parsing: " + quantity);
+        console.log("After Parsing: " + discount);
+        console.log(typeof quantity);
+        console.log(typeof discount);
+
+        var a = 1;
+        var b = 2;
+        console.log("Arithmetic operators");
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log(a ** b);
+
+        console.log("Relational operators");
+        console.log(a == b);
+        console.log(a != b);
+        console.log(a < b);
+        console.log(a > b);
+        console.log(a <= b);
+        console.log(a >= b);
+        
+       var flag = 0;
+       if(flag)
+       {
+           console.log('truthy');
+       }
+       else
+       {
+           console.log('falsy');
+       }
+
+
+       var flag1 ="null";   //Without quotes, it is falsy
+       if(flag1)
+       {
+           console.log('truthy');
+       }
+       else
+       {
+           console.log('falsy');
+       }
+       
+       var flag2 = undefined;
+       console.log(flag2);
+       console.log(typeof flag2);
+       if(flag2)
+       {
+           console.log('truthy');
+       }
+       else
+       {
+           console.log('falsy');
+       }
+       
+       var flag3 = NaN;
+       if(flag3)
+       {
+           console.log('truthy');
+       }
+       else
+       {
+           console.log('falsy');
+       }
+       
+       console.log("Arrays");
+       var arr = ['apples', 'oranges', 'litchi'];
+       console.log(arr[0]);
+       console.log(arr[1]);
+       console.log(arr[2]);
+
+       function foo()
+       {
+           if(true)
+           {
+               var c = 'Variables in a block within foo';
+               console.log('c (inside if block) = ' , c);
+           }
+           console.log('c (outside if block) = ' , c);
+       }
+
+       foo();
+       console.log('c=', c)
+    </script>
+</body>
+</html>

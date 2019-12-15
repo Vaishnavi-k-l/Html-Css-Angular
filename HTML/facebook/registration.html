@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="facebook-main.css">
+</head>
+
+<body>
+    <header>
+            <h2 id="font-style">facebook</h2>
+            <img class="FB-logo" src="images/facebook-logo.png" alt="FB logo">
+            <button class="loginButton">Login</button>
+    </header>
+
+    <main>
+        <img src="images/n1.svg" alt="network" class="network-styling">
+        <div id="headingStyle">
+                <h1>Create a new account</h1>
+                <h2>It's quick and easy</h2>
+        </div>
+        
+        <fieldset>
+                <form action="register.php" method="POST">
+        
+                        <input type="text" name="firstname" placeholder="First Name" autofocus>
+                        <input type="text" name="surname" placeholder="Surname"><br>
+                       
+                        <input class="inp-styling" type="tel" name="phone" placeholder="Contact number"><br>
+                        <input class="inp-styling" type="email" name="emailid" placeholder="Emial ID"><br>
+       
+                       <input class="inp-styling" type="password" name="password" placeholder="Enter your new password"><br>
+
+                       <input class="inp-styling" type="password" name="retypepassword" placeholder="Retype password"><br>
+                      
+                       <input  class="inp-styling" type="date" name="DOB" placeholder="Enter your date of birth"><br>
+
+                       <input class="inp-styling" list="country" name="chooseCountry" placeholder="Choose your country"><br>
+                       <datalist id="country">
+                         <option value="India">
+                         <option value="United States">
+                         <option value="Germany">
+                         <option value="United Kingdom">
+                         <option value="Africa">
+                       </datalist>
+
+                       <p class="gender">Choose your gender</p>
+                       <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+       
+                       <button class="create-acc-styling">Create Acocunt</button>
+               </form>
+        </fieldset>
+        
+    </main>
+
+    <footer>
+        <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. 
+        You may receive SMS notifications from us and can opt out at any time.</p>
+        <p id="footer-copyright">Copyright &copy; 2019</p>
+    </footer>
+</body>
+</html>

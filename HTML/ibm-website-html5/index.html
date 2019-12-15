@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+
+    <style>
+        /* 
+            Internal Styles
+        */
+       
+    </style>
+
+</head>
+
+<body>
+    <header class="topHeader" >
+        <img src="images/ibmlogo.png" alt="IBM Logo">
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <span>Search: <input type="search" name="searchInput" placeholder="Enter your search query here" ></span> 
+    <main>
+        <h4><span>International Business Machines Corporation </span><br>
+            <span>is an American multinational information technology company
+            headquartered in Armonk, New York</span></h4>
+        <h1>Download tools from IBM</h1>
+        <button type="button">Download for Windows</button>
+        <button type="button">Download for Mac OS</button>
+
+        <h3>Watch a video to understand more about IBM </h3>
+        <div class="multimedia">
+        <video width="600" height="400" autoplay controls>
+            <source src="videos/mov_bbb.mp4" type="video/mp4">
+            <source src="example.webm">
+            <source src="example.ogg">
+            Your browser does not support playing video
+        </video>          
+    </div>
+
+        <audio autoplay>
+            <source src="audio/example.mp3" type="video/mp4">
+            Your browser does not support playing audio
+        </audio>
+
+        <p>Use of SVG tag</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green"  fill="yellow" />
+        </svg>
+
+        <!--Canvas-->
+        <p>Use of Canvas tag</p>
+        <canvas id="myCanvas" width="400" height="100">
+            <!--JavaScripts code goes inside script-->
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                ctx.stroke();
+
+            </script>
+        </canvas>
+
+        <!--Use of Local Storages-->
+        <script>
+            if (localStorage) {
+                localStorage.setItem("Vaish", "1");
+                localStorage.setItem("B", "2");
+            }
+
+            if (sessionStorage) {
+                sessionStorage.setItem("A", "1");
+
+            }     
+        </script>
+
+        <!--Geo location-->
+        <p>HTML5 API's</p>
+        <p>Click the button to get your cordinates</p>
+        <button onclick="getLocation()">Get current location</button>
+        <p id="loc"></p>
+
+        <script>
+            var geoPosition = document.getElementById("loc");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition, errorInPermission);
+                } else {
+                    geoPosition.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                geoPosition.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+
+            function errorInPermission(err) {
+                console.log(err);
+                alert(err.message);
+            }
+        </script>
+
+
+
+        <div id="dragNdrop">
+            <h2>HTML 5 Drag and drop API</h2>
+
+            <div class="float-left" >
+                <p>Drag the image from here and drop it in the box below</p>
+                <div class="draggableBox1 draggable" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="drag1" src="images/ibmlogo.png" alt="IBM Logo" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                </div>
+            </div>
+            
+            <div class="float-left">
+                <p>Drop the image here and you can drag it back</p>
+                <div class="draggableBox2 draggable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>   
+
+
+
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+
+            }
+        </script>
+
+        </main>
+
+        <footer class="clear-float">
+            <nav id="secNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!--HTML Entity-->
+            <p>Copyright &copy; 2019</p>
+            
+        </footer>
+
+
+</body>
+
+</html>

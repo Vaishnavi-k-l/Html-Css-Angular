@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            speak() {
+                return this;
+            }
+            static eat() {
+                return this;
+            }
+        }
+
+        let obj = new Animal();
+        obj.speak(); // Animal {}
+        console.log(obj.speak);
+        let speak = obj.speak;
+        speak(); // undefined
+
+        Animal.eat() // class Animal
+        let eat = Animal.eat;
+        eat(); // undefined
+
+        //console.log(obj.speak);
+        document.write(eat);
+
+        /*----------------Public field dclarations-----------------------------*/
+
+        class Rectangle {
+            height = 0;
+            width;
+            constructor(height, width) {
+                this.height = height;
+                this.width = width;
+            }
+        }
+
+        /*------------------------Public instance fields--------------------------*/
+        const PREFIX = 'prefix';
+        var name ="Vaishnavi";
+        class ClassWithComputedFieldName {
+            [`${PREFIX}Field`] = 'prefixed field';
+        }
+
+        const instance = new ClassWithComputedFieldName();
+        console.log(instance.prefixField);    // expected output: "prefixed field"
+        console.log(`My name is ${name}.`);
+
+      
+    </script>
+</body>
+
+</html>

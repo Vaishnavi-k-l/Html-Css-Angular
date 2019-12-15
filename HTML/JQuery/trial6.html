@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //      $("#p1").mousedown(function () {
+        //     //$("#p1").mouseup(function () {
+        //          alert("Mouse down over p1!");
+        //        // alert("Mouse up over p1!");
+        //     });
+        // });
+
+        $(document).ready(function () {
+            $("#p1").hover(function () {
+                alert("You entered p1!");
+            },
+                function () {
+                    alert("Bye! You now leave p1!");
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+    <p id="p1">This is a paragraph.</p>
+</body>
+
+</html>

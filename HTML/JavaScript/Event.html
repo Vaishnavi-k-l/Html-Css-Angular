@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<p>Clicki>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+
+    <p id="ibm">IBM</p>
+    <p>Click the button to display the date</p>
+    <button onclick="displayDate()">The time is?</button>
+
+    <script>
+        var val = document.getElementById("ibm");
+        function displayDate() {
+            document.getElementById("demo").innerHTML = val.innerHTML;
+        }
+
+        function changeText(id) {
+            id.innerHTML = "Ooops!";
+        }
+    </script>
+    
+    <p id="demo"></p>
+
+</body>
+
+</html>

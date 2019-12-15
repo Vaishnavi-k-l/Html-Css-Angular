@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+
+            speak() {
+                console.log(`${this.name} makes a noise.`);
+            }
+        }
+
+        class Dog extends Animal {
+            constructor(name) {
+                super(name); // call the super class constructor and pass in the name parameter
+            }
+
+            speak() {
+                console.log(`${this.name} barks.`);
+            }
+        }
+
+        let d = new Dog('Mitzie');
+        d.speak(); // Mitzie barks.
+
+
+
+
+
+
+
+
+
+
+        class Cat
+         {
+            constructor(name) 
+            {
+                this.name = name;
+            }
+
+            speak()
+             {
+                console.log(`${this.name} makes a noise.`);
+            }
+        }
+
+        class Lion extends Cat
+         {
+            speak() 
+            {
+                super.speak();  //Calling the super class speak() method.
+                console.log(`${this.name} roars.`);
+            }
+        }
+
+        let l = new Lion('Fuzzy');
+        l.speak();
+// Fuzzy makes a noise.
+// Fuzzy roars.
+    </script>
+</body>
+
+</html>

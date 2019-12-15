@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+</head>
+
+
+<body>
+        <div id="header">
+                <img src="images/ibmlogo.png" alt="IBM Logo">
+                <div id="mainNav">
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="downloads.html">Downloads</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                         </ul>
+                </div>
+                <hr>
+        </div>
+
+        <div>
+            <h1>Contact us -- fill in the form below</h1>
+            <form action="formsubmission.php" method="POST">
+                <div>
+                        <label for="fullname">Enter your full name</label>
+                        <input type="text" id="fullname" name="fullname"><br>
+                </div>
+                
+                <div>
+                        <label for="email">Enter your E-mail</label>
+                        <input type="text" id="email" name="email"><br>
+                </div>
+               
+                <div>
+                        <label for="typeofquery">Select your query</label>
+                        <select id="typeofquery" name="typeofquery">
+                            <option>----Select one-----</option>
+                            <option value="1">Business consulting</option>
+                            <option value="2">software support</option>
+                            <option value="3">Reporting issues in software</option>
+                            <option value="4">Investor related</option>
+                            <option value="5">Media Relations</option>
+                        </select>
+                </div>
+
+                <div>
+                    <label for="querydesc">Enter the query</label>
+                    <textarea id="querydesc"></textarea>
+                </div>
+            
+                <div>
+                    <button type="reset">Reset</button>
+                    <input type="submit" value="Submit this form">
+                </div>
+              
+            </form>
+        </div>
+
+       
+</body>
+</html>

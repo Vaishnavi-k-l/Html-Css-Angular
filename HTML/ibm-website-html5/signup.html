@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+
+<body>
+    <h1>Sign UP</h1>
+    <form action="submit.php" method="POST" autocomplete="off">
+        <div class="formStyling">
+            <label for="fullname">Enter your full name <sup>*</sup>:</label>
+            <input type="text" id="fullname" name="name" placeholder="Enter your name" required autofocus><br>
+        </div>
+
+        <div class="formStyling">
+            <label for="password1">Enter your passowrd <sup>*</sup>:</label>
+            <input type="password" id="password1" name="passcode" placeholder="Enter your password" required><br>
+        </div>
+
+        <div class="formStyling">
+            <label for="password2">Confirm password <sup>*</sup>:</label>
+            <input type="password" id="password2" name="passcode" placeholder="Enter your password" required><br>
+        </div>
+
+        <div class="formStyling">
+            <label for="email">Enter your IBM E-mail <sup>*</sup>:</label>
+            <input type="email" id="email" pattern=".+@ibm.com" name="emailid" placeholder="Enter your emailid"
+                required>
+        </div>
+
+        <div class="formStyling">
+            <label for="telephone">Enter your telephone <sup>*</sup> :</label>
+            <input type="tel" id="telephone" name="telephonenum" placeholder="Max 10 digits" minlength="8"
+                maxlength="10" required><br>
+        </div>
+
+        <div class="formStyling">
+            <label for="dob">Enter your Date of birth <sup>*</sup>:</label>
+            <input type="date" id="dob" name="dateofbirth" required>
+        </div>
+
+        <div class="formStyling">
+            <label for="favColor">Enter your favorite color <sup>*</sup>:</label>
+            <input type="color" id="favColor" >
+        </div>
+
+        <div class="formStyling">
+            <label for="linkedInProfileUrl">Enter your linkedIn profile url <sup>*</sup>:</label>
+            <input type="url" id="linkedinurl" name="linkedInProfileUrl"
+                placeholder="Enter your linked in profile url with Http" required>
+        </div>
+
+        <div class="formStyling">
+            <label for="fanbase">Who's fan are you?<sup>*</sup>:</label>
+            <input type="radio" id="fan1" name="fan" value="JustinBieber">Justin Bieber
+            <input type="radio" id="fan2" name="fan" value="TaylorSwift">TaylorSwift
+        </div>
+
+
+        <div class="formStyling">
+            <label for="experience">Select your experience <sup>*</sup>:</label>
+            <input type="range" id="experience" name="experience" min="0" max="40" step="5" >
+        </div>
+
+        <div class="formStyling">
+            <label for="technology">What technology do you like? <sup>*</sup>:</label>
+            <input list="technologyList" id="technology" name="technology" required>
+            <datalist id="technologyList">
+                <option value="Front-End">HTML, CSS, JS</option>
+                <option value="Back-End">Java, Python, PHP, Ruby, Perl, NodeJs</option>
+                <option value="Database">MySQL, MongoDB</option>
+                <option value="Cloud">SaaS, Paas, IaaS</option>
+            </datalist>
+
+        </div>
+
+        <div class="formStyling">
+            <input type="submit" value="Sign-Up" class="resetButton">
+        </div>
+
+        <div>
+            <p>Already have an account? <a href="signin.html">SIGNIN</a></p>
+        </div>
+    </form>
+</body>
+
+</html>

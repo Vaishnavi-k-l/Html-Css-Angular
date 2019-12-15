@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/registerStyle.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Sign Up|LinkedIn</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainContent">
+            <h2>Linked<img src="images/registerLogo.svg" class="logoResize"></h2>
+
+            <h4>Make the most of your professional life</h4>
+        </div>
+
+
+
+        <div class="formStyling">
+            <form action="login.html" >
+                <div class="givepadding">
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control" id="firstname" autofocus required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" pattern=".+@ibm.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" id="pwd"    minlength="8"  maxlength="12" required>
+                    </div>
+
+                    <p class="formData">You agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.</p>
+
+                    <button type="submit" class="btn btn-primary button-Styling">Agree and Join</button>
+
+                    <div class="RegisterFooter">
+                        <p style="display: contents;">Alread on LinkedIn? </p><a href="login.html">Sign in</a>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+        <p class="PageFooter">LinkedIn Corporation &copy2019 </p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+
+body{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Verdana,sans-serif;
+}
+
+.main
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h3
+{
+    font-size: 24px;
+}
+.table1
+{
+    width: 100%;
+    text-align: left;
+}
+.table1 ,.table1 tr, .table1 td, .table1 th{
+    border: solid 1px #00000042;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+.div1
+{
+    background-color:  #00000017;
+    height: 340px;
+}
+
+.div1 h2
+{
+    padding: 15px;
+}
+
+.div1-sub
+{
+    background-color:white;
+    margin: 15px;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+.div2
+{
+    background-color:  #00000017;
+    height: 310px;
+}
+
+.div2 h2
+{
+    padding: 15px;
+}
+
+.div2-sub
+{
+    background-color:white;
+    margin: 15px;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+
+.div3
+{
+    background-color:  #00000017;
+    height: 267px;
+}
+
+.div3 h2
+{
+    padding: 15px;
+}
+
+
+.div3-sub
+{
+    background-color:white;
+    margin: 15px;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+.div1-btn
+{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:20px;
+}
+
+hr
+{
+    color: #00000042;
+    border-top: 1px solid #eee;
+    border-bottom: none;
+    border-left:none;
+    border-right: none;
+}
+
+.table2
+{
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
+
+/*.table2 th
+{
+    border-bottom: 1px soid #ddd;
+}
+
+.table2 td{
+    border-bottom: 1px soid #ddd;
+
+}*/
+
+
+.table2 th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  span
+  {
+      background-color: #ddd;
+      color: red;
+  }
+
+  .table3
+  {
+      width: 100%;
+  }
+
+  .table3 th, td
+  {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table3 tr:hover
+  {
+      background-color:  #00000017;
+  }

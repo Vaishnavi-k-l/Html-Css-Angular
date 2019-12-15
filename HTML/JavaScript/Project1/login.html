@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>LinkedIn Login,Sign in|LinkedIn</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="mainContent">
+            <div class="headerLogo">
+                <h4> Linked<img src="images/logo.svg" alt="Logo" class="logoStyle"> </h4>
+            </div>
+
+            <h3 style="font-weight: normal;">Welcome Back</h3>
+            <p class="description">Don't miss your next opportunity. Sign in to stay updated on your professional world.
+            </p>
+        </div>
+
+        <form action="profile.html" >
+            <div class="form">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email or Phone" pattern=".+@ibm.com" name="email"
+                        autocomplete="off" required autofocus>
+                </div>
+                <div class="form-group pass_show">
+                    <input type="password" class="form-control" id="pwd" placeholder="Password" required name="pswd"
+                        minlength="8"  maxlength="12">
+
+                </div>
+
+                <button type="submit" class="btn btn-primary buttonStyling" >Sign In</button>
+            </div>
+        </form>
+
+        <a href="#" class="forgotPassowrd">Forgot passowrd?</a>
+
+        <div class="RegisterPara">
+            <p style="display: contents;">New to LinkedIn? </p><a href="register.html">Join now</a>
+        </div>
+    </div>
+
+    <script type="text/javascript"></script>
+
+    <footer class="footerStyle">
+        <p>Linked<img src="images/black-logo.svg" alt="Footer Logo" class="footerImage"></p>
+        <p>&copy 2019</p>
+        <a href="#">User Agreement</a>
+        <a href="#">Privacy Policy </a>
+        <a href="#">Community Guidelines</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Copyright Policy</a>
+        <a href="#">Send Feedback</a>
+
+    </footer>
+</body>
+
+</html>

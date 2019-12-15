@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Styling</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            /*margin: 0 auto;*/
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover::before
+        {
+            background-color: gray;
+        }
+
+        tr:hover {
+            background-color: red;
+            /*transition: 0;*/
+        }
+
+        tr:hover::after
+        {
+            background-color: blue;
+        }
+
+
+        tr:hover:active {
+            background-color: gray;
+            /*transition: 0;*/
+        }
+
+        /*tr:hover:after:hover {
+            background-color:royalblue;
+        }*/
+
+        th {
+            vertical-align: top;
+        }
+
+        td {
+            vertical-align: top;
+            text-align: right;
+        }
+
+
+
+        th,
+        td {
+            height: 50px;
+            padding: 20px;
+
+            border-bottom: solid 1px blue;
+        }
+
+        table,
+        th,
+        td {
+            /*border: solid 1px black;*/
+            border-spacing: 10px;
+        }
+
+        .scroll {
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="scroll">
+        <table>
+            <tr>
+                <th>FirstName</th>
+
+                <th>LastName</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>State</th>
+                <th>10th Marks</th>
+                <th>12th marks</th>
+                <th>College</th>
+                <th>Branch</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+            </tr>
+
+            <tr>
+                <td>Vaishnavi</td>
+                <td>K L</td>
+                <td>21</td>
+                <td>India</td>
+                <td>Karnataka</td>
+                <td>95</td>
+                <td>96</td>
+                <td>Sahyadri</td>
+                <td>CS</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+
+            </tr>
+
+            <tr>
+                <td>Advika</td>
+                <td>K J</td>
+                <td>21</td>
+                <td>India</td>
+                <td>Karnataka</td>
+                <td>95</td>
+                <td>96</td>
+                <td>Sahyadri</td>
+                <td>CS</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>21</td>
+                <td>India</td>
+                <td>Karnataka</td>
+                <td>95</td>
+                <td>96</td>
+                <td>Sahyadri</td>
+                <td>CS</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

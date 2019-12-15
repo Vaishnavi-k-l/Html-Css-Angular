@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css JQuery</title>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("#para1").css({"font-size": "40px", color: "blue"});
+                $("#para2").css("background-color", "green");
+
+                var $p1 = $("#para1");
+                var $p2 = $("#para2");
+                $p1.prop("color", "#FF0000");
+                $p1.prop("font-weight", "bold");
+
+                $p2.prop("background-color", "yellow");
+
+                $("#para3").css({"color": $p1.prop("color"), "font-weight": $p1.prop("font-weight"),
+                 "background-color": $p2.prop("background-color")});
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <p id="para1" style="color:red; font-weight: bold;">Hello 1</p>
+    <p id="para2" style="background-color: yellow">Hello 2</p>
+    <p id="para3" >Hello 3</p>
+    <button>Change the styles</button>
+</body>
+</html>

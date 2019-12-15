@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Registration page</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+        <form action="Website-pg2.html" method="get" class="was-validated">
+            <!-- Name -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                </div>
+
+                <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+                <input type="text" name="lname" class="form-control" placeholder="Last Name">
+            </div>
+            
+            <!--Username and Password -->
+            <div class="form-group">
+                <label for="usr">User Name:</label>
+                <input type="text" class="form-control" name="usr" id="usr" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" name="pwd" id="pwd" minlength="8" required>
+            </div>
+            <!--Phone number-->
+            <!--
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" class="form-control" name="phone" id="phone" required>
+            </div>-->
+            <!--Email
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="emial" id="email" required>
+            </div>-->
+            <!--Date of birth
+            <div class="form-group">
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" class="form-control" name="dob" id="dob" required>
+            </div>-->
+            <!--Gender 
+            <div class="form-group">
+                <label for="gender">Gender : </label>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="gender" value="Male" name="optradio">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="gender" value="Female" name="optradio">Female
+                    </label>
+                </div>
+            </div>-->
+            <!-- Address 
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" rows="5" name="address" id="address" required></textarea>
+            </div>-->
+
+            <!-- Education
+            <div class="form-group">
+                <label for="sel1">Choose your highest Qualification:</label>
+                <select class="form-control" name="sel1" id="sel1">
+                    <option>BE</option>
+                    <option>MBBS</option>
+                    <option>Mtech</option>
+                    <option>Btech</option>
+                </select>
+            </div>-->
+            <!-- Skills 
+            <div class="form-group">
+
+                <label for="sel2">Enter your skills list (Separate them by comma):</label>
+                <textarea class="form-control" rows="3" name="sel2" id="sel2" required></textarea>
+                <!--  <select multiple class="form-control" name="sel2" id="sel2" name="sellist2">
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>C#</option>
+                    <option>C</option>
+                    <option>Php</option>
+                </select>
+            </div>-->
+            <!--Organization
+            <div class="form-group">
+                <label for="org">Organization:</label>
+                <input type="text" class="form-control" name="org" id="org" required>
+            </div>-->
+
+
+            <!--location
+            <div class="form-group">
+                <label for="loc">Current Location:</label>
+                <input type="text" class="form-control" name="loca" id="loc" required>
+            </div>-->
+            <!--PAN number
+            <div class="form-group">
+                <label for="pan">PAN:</label>
+                <input type="text" class="form-control" name="panmber" id="pan" required>
+            </div>-->
+            <!--Aadhaar number
+            <div class="form-group">
+                <label for="adhar">Aadhaar:</label>
+                <input type="number" class="form-control" name="Adhaar" id="adhar" required>
+            </div>
+            <div class="form-group ">
+                Are you Indian?
+
+
+                <label class="switch" for="indian">
+                    <input type="checkbox" name="nationality" id="indian">
+                    <span class="slider round"></span>
+                </label>
+
+           
+
+            </div> -->
+
+            <input type="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>

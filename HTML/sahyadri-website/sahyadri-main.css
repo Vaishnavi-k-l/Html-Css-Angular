@@ -1,0 +1,64 @@
+header
+{
+    background: #161617;
+    height: 150px;
+    margin:0;
+}
+
+body
+{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2
+{
+    border-bottom: solid 2px blue;
+    
+}
+
+#mainNav ul li
+{
+    float: right;
+    list-style: none;  
+    display: inline;    
+    margin-top: 90px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#mainNav a
+{
+    color: white
+}
+
+.sahyaLogo
+{
+    width: 160px;
+    height: 130px;
+}
+
+.sidebar
+{
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    background: #484809;
+    color: white;
+    font-style: italic;
+    font-family: initial;
+
+}
+
+.mainContent
+{
+    float: left;
+    margin-left: 27%;
+    width:73%;
+    text-align: left;
+}
+
+img
+{
+    margin: 20px;
+}

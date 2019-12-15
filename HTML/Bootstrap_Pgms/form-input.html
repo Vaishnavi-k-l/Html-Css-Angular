@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Form control: input</h2>
+        <p>The form below contains two input elements; one of type text and one of type password:</p>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="usr">FirstName:</label>
+                <input type="text" class="form-control form-control-lg" id="usr" name="username">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" name="password">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control-plaintext" placeholder="Form control with plain text"
+                    name="text2">
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Option 1
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Option 2
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+                </label>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Option 1
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Option 2
+                </label>
+            </div>
+            <div class="form-check disabled">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio" disabled>Option 3
+                </label>
+            </div>
+
+            <br>
+            <hr>
+            <div class="form-group">
+                <label for="sel1">Select list:</label>
+                <select class="form-control" id="sel1">
+                    <option>US</option>
+                    <option>UK</option>
+                    <option>Australia</option>
+                    <option>India</option>
+                </select>
+                <br>
+                <label for="sel2">Mutiple select list (hold ctl+shift to select more than one):</label>
+                <select multiple class="form-control" id="sel2" name="sellist2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="range" class="form-control-range" name="range">
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control-file border" name="file">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Your Email">
+                <div class="input-group-append">
+                    <span class="input-group-text">@example.com</span>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Person</span>
+                </div>
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">One</span>
+                    <span class="input-group-text">Two</span>
+                    <span class="input-group-text">Three</span>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-primary" type="button">Basic Button</button>
+                </div>
+                <input type="text" class="form-control" placeholder="Some text">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Go</button>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Something clever..">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">OK</button>
+                    <button class="btn btn-danger" type="button">Cancel</button>
+                </div>
+            </div>
+
+            <div class="input-group mt-3 mb-3">
+                <div class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                       Status
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Mr</a>
+                        <a class="dropdown-item" href="#">Mrs</a>
+                        <a class="dropdown-item" href="#">Ms</a>
+                    </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

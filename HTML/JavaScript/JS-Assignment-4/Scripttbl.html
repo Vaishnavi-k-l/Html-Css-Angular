@@ -1,0 +1,64 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="Generate a table." onclick="takeValue()">
+    <script>
+        function generate_table(val) {
+            // get the reference for the body
+            var body = document.getElementsByTagName("body")[0];
+
+            // creates a <table> element and a <tbody> element
+            var tbl = document.createElement("table");
+            var tblBody = document.createElement("tbody");
+
+            // creating all cells
+            for (var i = 0; i < 2; i++) {
+                // creates a table row
+                var row = document.createElement("tr");
+
+                for (var j = 0; j < 2; j++) {
+                    // Create a <td> element and a text node, make the text
+                    // node the contents of the <td>, and put the <td> at
+                    // the end of the table row
+                    var cell = document.createElement("td");    //Assignment
+           
+                    var cellText = document.createTextNode(val);
+                    cell.appendChild(cellText);
+                    row.appendChild(cell);
+                }//Innerloop is only till here
+                
+                // add the row to the end of the table body
+                tblBody.appendChild(row);
+            }
+
+            // put the <tbody> in the <table>
+            tbl.appendChild(tblBody);
+            // appends <table> into <body>
+            body.appendChild(tbl);
+            // sets the border attribute of tbl to 2;
+            tbl.setAttribute("border", "2");
+        }
+
+        function takeValue()
+        {
+            var val = prompt("Please enter the table data ");
+            if (val != null) 
+            {
+                generate_table(val);
+            }
+        }
+       
+    </script>
+</body>
+
+</html>

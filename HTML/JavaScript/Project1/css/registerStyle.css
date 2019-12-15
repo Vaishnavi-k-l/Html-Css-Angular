@@ -1,0 +1,157 @@
+body
+{
+
+    background-color: #0077b5; /* For browsers that do not support gradients */
+    background-image: -webkit-linear-gradient(to bottom right, #0077b5, #008891);
+    /* background-color: linear-gradient(45deg, #0077b5,#008891); */
+    /* text-align: center; */
+}
+
+/*------------MainContent------------------*/
+.mainContent
+{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin-top: 3%;
+}
+
+.mainContent h1
+{
+    font-weight: 700;
+}
+.logoResize
+{
+    width: 30px;
+    vertical-align: baseline;
+    background-color: white;
+}
+
+/*--------------Form Styling---------------------*/
+
+.formStyling
+{
+    margin: 30px auto 10px;
+    background: #faf9f9;
+    width: 500px;
+}
+
+.formStyling input
+{
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    width: 400px;
+    margin: 0 auto;
+    height: 33px;
+    border-radius: 0;
+}
+
+.formStyling label
+{
+    margin-left: 50px;
+}
+
+.formData
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.givepadding
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.givepadding p
+{
+    margin-top: 20px;
+}
+
+
+/*------------Button----------*/
+.button-Styling
+{
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    margin: 6px 50px 6px 50px;
+    width:400px;
+    border-radius: 0;
+}
+
+
+/*----form footer----*/
+.RegisterFooter
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* 
+fieldset
+{
+    /* margin: 0px auto;
+    width: 0px;
+    background: #e6e1e1;
+    background: #eae9e9; 
+} */
+
+/*--------------Form footer--------*/
+.PageFooter
+{
+   text-align: center;
+   color: #979797;
+}
+
+a, a:hover, a:active, a:visited, a:focus
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    background-color: #d9eeec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------Form Styling----------*/
+
+.formstyle
+{
+    margin: 0 auto;
+}
+
+fieldset
+{
+    background-color: #eae9e9;
+    /* margin: 0px auto; */
+    width: 0px; 
+}
+
+.form input
+{
+ width : 350px;
+ margin: 0 auto;
+ border: solid 1px black;
+ /* height: 50px; */
+ border-radius: 0;
+}

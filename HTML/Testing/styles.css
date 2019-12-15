@@ -1,0 +1,60 @@
+
+
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#para1
+{
+    font-size: 10cm;
+}
+
+.para2
+{
+    font-size: 10mm;
+}
+
+.para3
+{
+    font-size: 100px;
+}
+
+.para4
+{
+    font-size: 10in;
+}
+
+.para5
+{
+    font-size: 10pt;
+}
+
+.para6
+{
+    font-size: 10pc;
+}
+
+.para7
+{
+    font-size: 10%;
+}
+
+.para8
+{
+    font-size: 10em;
+}
+
+}
+
+.para9
+{
+    font-size: 10rem;
+}
+
+}
+
+.para10
+{
+    font-size: 10ex;
+}
